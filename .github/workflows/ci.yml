@@ -23,8 +23,8 @@ jobs:
         with:
           # used for authoring updates:
           github-token: ${{ steps.generate-token.outputs.token }}
-          author-email: 123456+scala-steward[bot]@users.noreply.github.com
-          author-name: scala-steward[bot]
+          author-email: 123456+scala-steward-ahjohannessen@users.noreply.github.com
+          author-name: scala-steward-ahjohannessen
           # used for listing repositories (optional, can be a different app):
           github-app-id: 206892
           github-app-key: ${{ secrets.APP_PRIVATE_KEY }}
