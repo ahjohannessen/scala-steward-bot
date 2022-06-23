@@ -19,12 +19,9 @@ jobs:
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Launch Scala Steward
-        uses: scala-steward-org/scala-steward-action@v2.20.0
+        uses: scala-steward-org/scala-steward-action@v2
         with:
-          # used for authoring updates:
           github-token: ${{ steps.generate-token.outputs.token }}
-          author-email: 123456+scala-steward-ahjohannessen@users.noreply.github.com
-          author-name: scala-steward-ahjohannessen
-          # used for listing repositories (optional, can be a different app):
-          github-app-id: 206892
-          github-app-key: ${{ secrets.APP_PRIVATE_KEY }}
+          repos-file: 'repos.md'
+          author-email: 106732425+scala-steward-ahjohannessen[bot]@users.noreply.github.com
+          author-name: scala-steward-ahjohannessen[bot]
